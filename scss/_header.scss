@@ -1,0 +1,120 @@
+.header {
+    border-bottom: 1px solid #F5F5F5;
+}
+
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+
+.hider-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    margin-right: 93px;
+    text-decoration: none;
+    font-family: var(--secondary-font);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--accent-color);
+}
+
+.logo-dark {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--lable-color);
+}
+
+.list {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.site-nav-link {
+    padding: 32px 0;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--main-text-color);
+    display: block;
+    position: relative;
+    transition: color 250ms var(--cubic-beziar);
+}
+
+.site-nav-link:hover,
+.site-nav-link:focus {
+    color: var(--accent-color);
+}
+
+.site-nav-link.current::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 4px;
+    left: 0;
+    bottom: -1px;
+    position: absolute;
+    background-color: var(--accent-color);
+    border-radius: 2px;
+}
+
+.site-nav-link:hover::after {
+    transform: scaleX(1);
+}
+
+.site-list-item:not(:last-child) {
+    margin-right: 50px;
+}
+
+.link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    display: block;
+}
+
+.link:hover,
+.link:focus {
+    color: var(--accent-color);
+}
+
+.no-current {
+    position: relative;
+}
+
+.style-flex {
+    display: flex;
+    margin-left: auto;
+}
+
+.indent {
+    margin-right: 30px;
+}
+
+.contacts {
+    display: flex;
+    margin-left: auto;
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--secondary-text-color);
+    transition: color 250ms var(--cubic-beziar);
+}

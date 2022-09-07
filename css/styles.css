@@ -15,6 +15,7 @@ h3,
 h4,
 h5,
 h6,
+
 p {
   margin-top: 0;
   margin-bottom: 0;
@@ -43,43 +44,6 @@ img {
   height: auto;
 }
 
-
-.site-nav-link {
-  padding: 32px 0;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: var(--main-text-color);
-  display: block;
-  position: relative;
-  transition: color 250ms var(--cubic-beziar);
-}
-
-.site-nav-link:hover,
-.site-nav-link:focus {
-  color: var(--accent-color);
-}
-
-.site-nav-link.current::after {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 4px;
-  left: 0;
-  bottom: -1px;
-  position: absolute;
-  background-color: var(--accent-color);
-  border-radius: 2px;
-}
-
-.site-nav-link:hover::after {
-  transform: scaleX(1);
-}
-
-.no-current {
-  position: relative;
-}
 
 .section {
   padding-top: 94px;
@@ -153,6 +117,7 @@ img {
  }
 
  textarea {
+  resize: none;
   padding: 12px;
   width: 448px;
   height: 120px;
@@ -317,19 +282,6 @@ img {
   display: block;
 }
 
-.contacts {
-  display: flex;
-  margin-left: auto;
-}
-
-.style-flex {
-  display: flex;
-  margin-left: auto;
-}
-
-.indent {
-  margin-right: 30px;
-}
 
 
 
@@ -436,17 +388,10 @@ img {
 }
   
 
-textarea {
-  resize: none;
-}
-
-
-
 .benefits-container {
   gap: 30px;
   display: flex;
 }
-
 
 
 .lable {
@@ -537,8 +482,6 @@ textarea {
 /* Logo */
 
 
-
-
 .example {
   display: flex;
   flex-wrap: wrap;
@@ -549,17 +492,6 @@ textarea {
   padding: 30px 0;
 }
 
-.link {
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  display: block;
-}
-
-.link:hover,
-.link:focus {
-  color: var(--accent-color);
- }
 
 .test-conntainer {
   width: 1230px;
@@ -604,14 +536,6 @@ textarea {
 
 .menu-distance:not(:last-child) {
   margin-right: 8px;
-}
-
-.logo-dark {
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  color: var(--lable-color);
 }
 
 .logo-light {
@@ -665,16 +589,7 @@ textarea {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.contact {
-  display: flex;
-  align-items: center;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: var(--secondary-text-color);
-  transition: color 250ms var(--cubic-beziar);
-}
+
 
 .button-blue {
   color: var(--primary-white-color);
