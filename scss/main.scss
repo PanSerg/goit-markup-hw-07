@@ -1,2 +1,9 @@
-@import "./header";
-@import "./hero";
+@import "./utils/variable";
+@import "./base/reset";
+@import "./base/common";
+@import "./utils/hidden";
+@import "./componets/container";
+@import "./layouts/header";
+@import "./layouts/hero";
+@import "./componets/title";
+@import "./componets/features";

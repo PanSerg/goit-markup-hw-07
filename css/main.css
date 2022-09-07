@@ -1,5 +1,82 @@
-.header {
-  border-bottom: 1px solid #F5F5F5;
+@charset "UTF-8";
+:root {
+  --accent-color: #2196f3;
+  --main-text-color: #212121;
+  --secondary-text-color: #757575;
+  --main-font: "Roboto", sans-serif;
+  --secondary-font: "Raleway", cursive;
+  --primary-white-color: #ffffff;
+  --lable-color: #000000;
+  --cubic-beziar: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto";
+  font-family: var(--main-font);
+  background-color: var(--primary-white-color);
+}
+
+.list {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  display: block;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+/* Спрятанный заголовок */
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+  margin: -1px;
 }
 
 .container {
@@ -12,6 +89,10 @@
 .hider-container {
   display: flex;
   align-items: center;
+}
+
+.header {
+  border-bottom: 1px solid #F5F5F5;
 }
 
 .logo {
@@ -31,14 +112,6 @@
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--lable-color);
-}
-
-.list {
-  display: flex;
-  align-items: center;
-  padding: 0;
-  margin: 0;
-  list-style: none;
 }
 
 .site-nav-link {
@@ -78,13 +151,6 @@
   margin-right: 50px;
 }
 
-.link {
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  display: block;
-}
-
 .link:hover,
 .link:focus {
   color: var(--accent-color);
@@ -117,4 +183,120 @@
   letter-spacing: 0.02em;
   color: var(--secondary-text-color);
   transition: color 250ms var(--cubic-beziar);
+}
+
+.envelope {
+  margin-right: 50px;
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+.head {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  background-color: #2F303A;
+}
+
+.overlay {
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/w4/Img.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.head-title {
+  margin-top: 0;
+  padding-bottom: 0;
+  margin-bottom: 30px;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.button {
+  cursor: pointer;
+  border-radius: 4px;
+  padding: 10px 32px;
+  margin-right: auto;
+  margin-left: auto;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+  border: transparent;
+}
+
+.tim-title {
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+  color: var(--main-text-color);
+}
+
+.tim-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
+  margin-bottom: 16px;
+}
+
+.tim-title,
+.tim-text {
+  align-items: center;
+}
+
+.benefits-container {
+  gap: 30px;
+  display: flex;
+}
+
+.features-item {
+  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-position: center;
+  background: #F5F4FA;
+  border-radius: 4px;
+  height: 120px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-bottom: 30px;
+}
+
+.features-title {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--main-text-color);
+}
+
+.features-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
 }/*# sourceMappingURL=main.css.map */

@@ -2,17 +2,6 @@
     border-bottom: 1px solid #F5F5F5;
 }
 
-.container {
-    width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin: 0 auto;
-}
-
-.hider-container {
-    display: flex;
-    align-items: center;
-}
 
 .logo {
     margin-right: 93px;
@@ -31,14 +20,6 @@
     line-height: 1.19;
     letter-spacing: 0.03em;
     color: var(--lable-color);
-}
-
-.list {
-    display: flex;
-    align-items: center;
-    padding: 0;
-    margin: 0;
-    list-style: none;
 }
 
 .site-nav-link {
@@ -78,13 +59,6 @@
     margin-right: 50px;
 }
 
-.link {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    display: block;
-}
-
 .link:hover,
 .link:focus {
     color: var(--accent-color);
@@ -117,4 +91,10 @@
     letter-spacing: 0.02em;
     color: var(--secondary-text-color);
     transition: color 250ms var(--cubic-beziar);
+}
+
+.envelope {
+    margin-right: 50px;
+    margin-right: 10px;
+    fill: currentColor;
 }
