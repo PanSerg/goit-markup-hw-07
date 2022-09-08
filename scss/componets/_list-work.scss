@@ -1,11 +1,8 @@
-.section-bottom {
+.about {
     padding-top: 0;
 }
 
-.section-title {
-    margin-top: 0;
-    margin-bottom: 0;
-    margin-bottom: 50px;
+.about__title {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
@@ -14,18 +11,24 @@
     color: var(--main-text-color);
 }
 
-.site-nav {
+.about__pre-title {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-bottom: 50px;
+}
+
+.about__product {
     display: flex;
 }
 
-.site-list-work {
+.about__work {
     position: relative;
         &:not(:last-child) {
         margin-right: 30px;
     }
 }
 
-.gajet-overlay-title {
+.about__text {
     position: absolute;
     box-sizing: border-box;
     display: block;

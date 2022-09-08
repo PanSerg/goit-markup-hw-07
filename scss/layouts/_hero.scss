@@ -1,11 +1,11 @@
 
-.head {
+.hero {
     padding-top: 200px;
     padding-bottom: 200px;
     background-color: #2F303A;
 }
 
-.overlay {
+.hero__overlay {
     max-width: 1600px;
     height: 600px;
     margin-left: auto;
@@ -16,7 +16,7 @@
     background-size: cover;
 }
 
-.head-title {
+.hero__title {
     margin-top: 0;
     padding-bottom: 0;
     margin-bottom: 30px;
@@ -29,12 +29,15 @@
     color: #FFFFFF;
 }
 
+.hero__button {
+    margin-right: auto;
+    margin-left: auto;
+}
+
 .button {
     cursor: pointer;
     border-radius: 4px;
     padding: 10px 32px;
-    margin-right: auto;
-    margin-left: auto;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;

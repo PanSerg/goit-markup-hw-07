@@ -14,29 +14,29 @@
   <link rel="stylesheet" href="./css/styles.css"/>
   <link rel="stylesheet" href="./css/main.min.css" />
   </head>
+
   <body>
-   
     <header class="header">
-      <div class="container hider-container">
-      <nav class="list">
-        <a class="logo" href="">Web<span class="logo-dark">Studio</span></a>
-       
-      <ul class="list">
-        <li class="site-list-item">
-          <a class="site-nav-link link current" href="">Студія</a></li>
-        <li class="site-list-item">
-          <a class="site-nav-link link no-current" href="./portfolio.html">Портфоліо</a></li>
-        <li class="site-list-item">
-          <a class="site-nav-link link no-current" href="">Контакти</a></li>
+      <div class="container header__container hider-container">
+      
+        <a class="logo header__logo" href="">Web<span class="logo-dark">Studio</span></a>
+      <nav class="navigation">
+      <ul class="navigation__list">
+        <li class="navigation__item">
+          <a class="navigation__link link current" href="">Студія</a></li>
+        <li class="navigation__item">
+          <a class="navigation__link link no-current" href="./portfolio.html">Портфоліо</a></li>
+        <li class="navigation__item">
+          <a class="navigation__link link no-current" href="">Контакти</a></li>
         </ul>
       </nav>
-      <ul class="style-flex">
-        <li class="indent"><a class="contacts contact link" href="mailto:info@devstudio.com">
+      <ul class="connect header__connect">
+        <li class="indent"><a class="connect__contact link" href="mailto:info@devstudio.com">
           <svg class="envelope" width="16" height="12">
             <use href="./images/w4/symbol-defs.svg#icon-envelope2"></use>
           </svg>info@devstudio.com
         </a></li>
-        <li><a class="contacts-link contact link" href="tel:+380961111111">
+        <li><a class="connect__contact link" href="tel:+380961111111">
           <svg class="envelope" width="10" height="16">
             <use href="./images/w4/symbol-defs.svg#icon-smartphone"></use>
           </svg>+38 096 111 11 11</a></li>
@@ -46,11 +46,11 @@
       
     <main>
       <!--Герой-->
-      <section class="section head overlay">
+      <section class="hero section hero__overlay">
       <div class="container">
-        <h1 class="head-title">ЕФЕКТИВНі РіШЕННЯ ДЛЯ <br> ВАШОГО БІЗНЕСУ</h1>
+        <h1 class="hero__title">ЕФЕКТИВНі РіШЕННЯ ДЛЯ <br> ВАШОГО БІЗНЕСУ</h1>
 
-        <button class="button" data-modal-open>Замовити послугу</button>
+        <button class="hero__button button" data-modal-open>Замовити послугу</button>
       </div>
       </section>
        
@@ -97,24 +97,24 @@
       </section>
    
       <!--Примеры работ-->
-      <section class="section section-bottom">
+      <section class="section about">
         <div class="container">
-        <h2 class="section-title">Чим ми займаємося</h2>
+        <h2 class="about__title about__pre-title">Чим ми займаємося</h2>
 
-        <ul class="site-nav">
-          <li class="site-list-work">
+        <ul class="about__product">
+          <li class="about__work">
             <img src="./images/img1.jpg" alt="гаджеты" width="370" height="294"/>
-            <h3 class="gajet-overlay-title">ДЕСКТОПНІ ДОДАТКИ</h3>
+            <h3 class="about__text">ДЕСКТОПНІ ДОДАТКИ</h3>
           </li>
 
-          <li class="site-list-work">
+          <li class="about__work">
             <img src="./images/img2.jpg" alt="ноутбук" width="370" height="294"/>
-            <h3 class="gajet-overlay-title">МОБІЛЬНІ ДОДАТКИ</h3>
+            <h3 class="about__text">МОБІЛЬНІ ДОДАТКИ</h3>
           </li>
 
-          <li class="site-list-work">
+          <li class="about__work">
             <img src="./images/img3.jpg" alt="планшет" width="370" height="294"/>
-            <h3 class="gajet-overlay-title">ДИЗАЙНЕРСЬКІ РіШЕННЯ</h3>
+            <h3 class="about__text">ДИЗАЙНЕРСЬКІ РіШЕННЯ</h3>
           </li>
         </ul>
         </div>
@@ -262,7 +262,6 @@
             </div>
           </li>
           </ul>
-
         </div>
       </section>
 
@@ -416,7 +415,7 @@
           </label>
           </div>
         
-        <button type="submit" class="button">Відправити</button>
+        <button type="submit" class=" hero__button button">Відправити</button>
       </form>
 
       <div>
