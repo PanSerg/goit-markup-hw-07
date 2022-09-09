@@ -10,18 +10,10 @@ body {
     align-items: center;
     text-decoration: none;
     display: block;
+
     &:hover,
     &:focus {
         color: var(--accent-color);
     }
 }
 
-.section {
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
-
-.section.no-padding {
-    padding-top: 0;
-    padding-bottom: 0;
-}

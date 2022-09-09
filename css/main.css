@@ -93,6 +93,8 @@ body {
 
 .header {
   border-bottom: 1px solid #F5F5F5;
+  display: flex;
+  align-items: center;
 }
 
 .logo {
@@ -109,7 +111,7 @@ body {
   margin-right: 93px;
 }
 
-.logo-dark {
+.logo__dark {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
@@ -285,11 +287,11 @@ body {
   color: var(--secondary-text-color);
 }
 
-.about {
+.section--section {
   padding-top: 0;
 }
 
-.about__title {
+.section__title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -298,20 +300,20 @@ body {
   color: var(--main-text-color);
 }
 
-.about__pre-title {
+.section__pre-title {
   margin-top: 0;
   margin-bottom: 0;
   margin-bottom: 50px;
 }
 
-.about__product {
+.about {
   display: flex;
 }
 
-.about__work {
+.about__item {
   position: relative;
 }
-.about__work:not(:last-child) {
+.about__item:not(:last-child) {
   margin-right: 30px;
 }
 
@@ -439,7 +441,7 @@ body {
   margin-right: 30px;
 }
 
-.clients-icon {
+.clients-link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -453,7 +455,7 @@ body {
   transition-duration: 250ms;
   transition-timing-function: var(--cubic-beziar);
 }
-.clients-icon:hover, .clients-icon:focus {
+.clients-link:hover, .clients-link:focus {
   border-width: 1px;
   border-style: solid;
   border-color: var(--accent-color);

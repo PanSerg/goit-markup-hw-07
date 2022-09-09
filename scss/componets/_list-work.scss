@@ -1,8 +1,8 @@
-.about {
+.section--section {
     padding-top: 0;
 }
 
-.about__title {
+.section__title {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
@@ -11,17 +11,17 @@
     color: var(--main-text-color);
 }
 
-.about__pre-title {
+.section__pre-title {
     margin-top: 0;
     margin-bottom: 0;
     margin-bottom: 50px;
 }
 
-.about__product {
+.about {
     display: flex;
 }
 
-.about__work {
+.about__item {
     position: relative;
         &:not(:last-child) {
         margin-right: 30px;
