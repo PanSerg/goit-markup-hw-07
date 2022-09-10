@@ -86,15 +86,13 @@ body {
   margin: 0 auto;
 }
 
-.hider-container {
+.header__container {
   display: flex;
   align-items: center;
 }
 
 .header {
   border-bottom: 1px solid #F5F5F5;
-  display: flex;
-  align-items: center;
 }
 
 .logo {
@@ -144,7 +142,7 @@ body {
 .navigation__link:hover::after {
   transform: scaleX(1);
 }
-.navigation__link.current::after {
+.navigation__link--current::after {
   content: "";
   display: block;
   width: 100%;
